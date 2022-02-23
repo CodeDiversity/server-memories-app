@@ -17,9 +17,6 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-app.get('/', (req,res) => {
-  res.send('hello')
-})
 
 const CONNECTION_URL = process.env.MONGO_URL;
 
